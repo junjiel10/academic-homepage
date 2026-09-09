@@ -67,7 +67,9 @@ img { max-width: 100%; display: block; }
   display: grid; place-items: center;
   width: 46px; height: 46px; border-radius: 12px;
   background: linear-gradient(135deg, var(--navy-800), var(--navy-600));
-  color: var(--gold-400); font-family: var(--serif); font-weight: 700; font-size: 15px; letter-spacing: .5px;
+  color: var(--gold-400); font-family: var(--serif); font-weight: 700;
+  font-size: 12px; letter-spacing: .5px; line-height: 1; white-space: nowrap;
+  padding: 0 4px; box-sizing: border-box;
   box-shadow: var(--shadow-sm);
 }
 .brand-text { display: flex; flex-direction: column; line-height: 1.25; }
