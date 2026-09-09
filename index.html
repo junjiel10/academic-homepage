@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="高等教育评估与质量保障体系知识分享主页" />
+  <title>高等教育评估与质量保障 · Academic Homepage</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230f2a4a'/%3E%3Ctext x='50' y='68' font-size='52' text-anchor='middle' fill='%23c9a227' font-family='Georgia'%3E%E8%B5%B7%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容 / Skip to content</a>
+
+  <!-- ======= Header ======= -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a class="brand" href="#/home" data-nav="home">
+        <span class="brand-mark">HEQA</span>
+        <span class="brand-text">
+          <strong id="brandTitle">高等教育评估与质量保障</strong>
+          <small id="brandSub">Academic Homepage · 学术主页</small>
+        </span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="主导航">
+        <button class="nav-link" data-nav="home" data-i18n="nav.home">首页</button>
+        <button class="nav-link" data-nav="about" data-i18n="nav.about">个人简介</button>
+        <button class="nav-link" data-nav="research" data-i18n="nav.research">研究领域</button>
+        <button class="nav-link" data-nav="publications" data-i18n="nav.publications">学术成果</button>
+        <button class="nav-link" data-nav="knowledge" data-i18n="nav.knowledge">知识分享</button>
+        <button class="nav-link" data-nav="contact" data-i18n="nav.contact">联系方式</button>
+      </nav>
+
+      <div class="header-tools">
+        <button class="lang-toggle" id="langToggle" aria-label="切换语言">
+          <i class="fa-solid fa-language"></i>
+          <span id="langLabel">EN</span>
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="打开菜单" aria-expanded="false">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ======= Main ======= -->
+  <main id="main">
+    <!-- 单页应用内容容器：由 app.js 按路由渲染 -->
+    <div id="app" class="page-container"></div>
+  </main>
+
+  <!-- ======= Footer ======= -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p id="footerNote">© 2026 · 澳门科技大学教育博士研究生 · 高等教育评估与质量保障</p>
+      <p class="footer-links">
+        <a href="mailto:junjiel10@student.must.edu.mo"><i class="fa-solid fa-envelope"></i> Email</a>
+        <span class="dot">·</span>
+        <span data-i18n="footer.built">基于知识共享精神维护，欢迎交流指正。</span>
+      </p>
+    </div>
+  </footer>
+
+  <!-- 文章/弹窗渲染目标 -->
+  <div id="modalRoot"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
