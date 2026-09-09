@@ -360,3 +360,91 @@ img { max-width: 100%; display: block; }
   .footer-inner { flex-direction: column; text-align: center; }
   .brand-text small { display: none; }
 }
+
+/* ============================================================
+   多页版新增样式（页面 / 文章页 / 双语副标等）
+   ============================================================ */
+
+.main-nav a.nav-link { display: inline-flex; align-items: center; }
+
+/* 双语小标题：中文主标题下方的英文衬线副标 */
+.en-sub {
+  display: block; font-family: var(--serif); font-style: italic;
+  color: var(--gold-500); font-size: 13.5px; letter-spacing: 1px;
+  font-weight: 400; margin-top: 4px;
+}
+.head-row { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+
+/* 首页导语横幅（分区引言） */
+.lead-strip {
+  background: linear-gradient(135deg, var(--navy-800), var(--navy-600));
+  color: #e8eef6; border-radius: 18px; padding: 26px 30px; margin: 0 0 40px;
+  display: flex; gap: 18px; align-items: flex-start; box-shadow: var(--shadow-md);
+}
+.lead-strip i { color: var(--gold-400); font-size: 26px; margin-top: 4px; }
+.lead-strip p { margin: 0; font-size: 16px; }
+.lead-strip .en-line { color: var(--gold-400); font-family: var(--serif); font-style: italic; font-size: 13.5px; }
+
+/* 列表页 / 简介页通用卡片间距 */
+.stack > * + * { margin-top: 22px; }
+.mini-list { list-style: none; margin: 0; padding: 0; }
+.mini-list li { display: flex; gap: 10px; margin-bottom: 10px; color: var(--ink-soft); }
+.mini-list i { color: var(--navy-600); width: 18px; margin-top: 4px; }
+
+/* 研究领域编号条 */
+.area-num-lg {
+  display: grid; place-items: center; flex: 0 0 auto;
+  width: 60px; height: 60px; border-radius: 16px;
+  font-family: var(--serif); font-weight: 700; font-size: 26px; color: #fff;
+  background: linear-gradient(135deg, var(--navy-700), var(--navy-600));
+  box-shadow: var(--shadow-sm);
+}
+
+/* 文章页 */
+.article-toolbar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px; }
+.back-link {
+  display: inline-flex; align-items: center; gap: 8px; font-weight: 600;
+  font-size: 14.5px; color: var(--navy-600);
+}
+.article-hero {
+  border-radius: 18px; padding: 30px 34px; margin-bottom: 26px; color: #eef3fa;
+  background:
+    radial-gradient(circle at 88% 10%, rgba(201,162,39,.28), transparent 45%),
+    linear-gradient(135deg, var(--navy-900), var(--navy-700));
+  box-shadow: var(--shadow-md);
+}
+.article-hero h1 { color: #fff; font-size: clamp(24px, 3.4vw, 34px); margin-bottom: 10px; }
+.article-hero .meta { color: #b9c7d8; font-size: 14px; display: flex; gap: 14px; flex-wrap: wrap; }
+.article-hero .meta i { color: var(--gold-400); margin-right: 4px; }
+.article-abstract { color: var(--gold-100); font-style: italic; }
+
+.article-body-wrap {
+  background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 34px clamp(18px, 4vw, 46px); box-shadow: var(--shadow-sm);
+}
+.article-body-wrap .article-html p { font-size: 16px; }
+
+/* 作者署名条 */
+.byline {
+  display: flex; align-items: center; gap: 12px; margin: 8px 0 22px;
+  font-size: 14px; color: var(--ink-soft);
+}
+.byline .avatar-sm {
+  width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center;
+  background: linear-gradient(135deg, var(--navy-700), var(--navy-600)); color: #fff;
+}
+.byline b { color: var(--navy-800); }
+
+/* 相关阅读 */
+.related { margin-top: 34px; }
+.related h3 { font-size: 17px; margin-bottom: 12px; }
+
+/* 打印友好（可保存为 PDF） */
+@media print {
+  .site-header, .site-footer, .article-toolbar, .menu-toggle { display: none !important; }
+  body { background: #fff; }
+  .article-hero { color: var(--navy-800); background: none; box-shadow: none; border: 1px solid var(--line); }
+  .article-hero h1 { color: var(--navy-800); }
+  .article-hero .meta { color: var(--ink-soft); }
+  .article-abstract { color: var(--ink-soft); }
+}

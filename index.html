@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="高等教育评估与质量保障体系知识分享主页" />
-  <title>高等教育评估与质量保障 · Academic Homepage</title>
+  <meta name="description" content="乐一 · 澳门科技大学教育博士研究生 · 高等教育评估与质量保障体系学术主页" />
+  <title>乐一 · 高等教育评估与质量保障 | 学术主页</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230f2a4a'/%3E%3Ctext x='50' y='68' font-size='52' text-anchor='middle' fill='%23c9a227' font-family='Georgia'%3E%E8%B5%B7%3C/text%3E%3C/svg%3E" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
@@ -12,60 +12,139 @@
 <body>
   <a class="skip-link" href="#main">跳到主要内容 / Skip to content</a>
 
-  <!-- ======= Header ======= -->
-  <header class="site-header" id="siteHeader">
+  <!-- ===== Header ===== -->
+  <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="#/home" data-nav="home">
+      <a class="brand" href="index.html">
         <span class="brand-mark">HEQA</span>
         <span class="brand-text">
-          <strong id="brandTitle">高等教育评估与质量保障</strong>
-          <small id="brandSub">Academic Homepage · 学术主页</small>
+          <strong data-i18n="brandName">乐一 · 学术主页</strong>
+          <small data-i18n="brandTag">高等教育评估与质量保障</small>
         </span>
       </a>
-
       <nav class="main-nav" id="mainNav" aria-label="主导航">
-        <button class="nav-link" data-nav="home" data-i18n="nav.home">首页</button>
-        <button class="nav-link" data-nav="about" data-i18n="nav.about">个人简介</button>
-        <button class="nav-link" data-nav="research" data-i18n="nav.research">研究领域</button>
-        <button class="nav-link" data-nav="publications" data-i18n="nav.publications">学术成果</button>
-        <button class="nav-link" data-nav="knowledge" data-i18n="nav.knowledge">知识分享</button>
-        <button class="nav-link" data-nav="contact" data-i18n="nav.contact">联系方式</button>
+        <a class="nav-link" href="index.html" data-i18n="nav.home">首页</a>
+        <a class="nav-link" href="about.html" data-i18n="nav.about">个人简介</a>
+        <a class="nav-link" href="research.html" data-i18n="nav.research">研究领域</a>
+        <a class="nav-link" href="publications.html" data-i18n="nav.publications">学术成果</a>
+        <a class="nav-link" href="knowledge.html" data-i18n="nav.knowledge">知识分享</a>
+        <a class="nav-link" href="contact.html" data-i18n="nav.contact">联系方式</a>
       </nav>
-
       <div class="header-tools">
-        <button class="lang-toggle" id="langToggle" aria-label="切换语言">
-          <i class="fa-solid fa-language"></i>
-          <span id="langLabel">EN</span>
-        </button>
-        <button class="menu-toggle" id="menuToggle" aria-label="打开菜单" aria-expanded="false">
-          <i class="fa-solid fa-bars"></i>
-        </button>
+        <button class="lang-toggle" id="langToggle" aria-label="切换语言"><i class="fa-solid fa-language"></i><span id="langLabel">EN</span></button>
+        <button class="menu-toggle" id="menuToggle" aria-label="打开菜单" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
       </div>
     </div>
   </header>
 
-  <!-- ======= Main ======= -->
   <main id="main">
-    <!-- 单页应用内容容器：由 app.js 按路由渲染 -->
-    <div id="app" class="page-container"></div>
+    <div class="container page-container" style="padding-top:44px">
+
+      <!-- Hero -->
+      <section class="hero reveal visible">
+        <div class="hero-grid">
+          <div>
+            <span class="eyebrow">HEQA · 高等教育评估与质量保障</span>
+            <h1>乐一 <span style="font-size:.55em;color:#b9c7d8;font-weight:400">· 教育博士研究生</span></h1>
+            <div class="title-en">Higher Education Assessment &amp; Quality Assurance</div>
+            <p class="tagline">以评估推动改进，以证据支撑质量。本站系统整理高等教育评估与质量保障体系的研究心得、政策动态与实务方法，供高校管理者、评估人员与研究者参考交流。</p>
+            <div class="hero-chips">
+              <span class="chip">澳门科技大学</span>
+              <span class="chip">博士研究生 Ed.D. Candidate</span>
+              <span class="chip">导师：孙建荣 教授</span>
+              <span class="chip">高等教育评估与质量保障</span>
+            </div>
+            <div class="hero-actions">
+              <a class="btn btn-gold" href="about.html"><i class="fa-solid fa-user-graduate"></i> 关于我</a>
+              <a class="btn btn-ghost" href="knowledge.html"><i class="fa-solid fa-book-open-reader"></i> <span data-i18n="common.readKnowledge">进入知识专栏</span></a>
+            </div>
+          </div>
+          <aside class="hero-card">
+            <h3>研究速览 · At a Glance</h3>
+            <div class="hero-stat"><i class="fa-solid fa-diagram-project"></i><div><b>质量保障体系</b><span>IQA 与 EQA 双层结构与制度设计</span></div></div>
+            <div class="hero-stat"><i class="fa-solid fa-bullseye"></i><div><b>学习成果评估</b><span>SLO / OBE 达成度评价与证据</span></div></div>
+            <div class="hero-stat"><i class="fa-solid fa-stamp"></i><div><b>院校评估与认证</b><span>第三方评估、专业认证与质量文化</span></div></div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- 站点导语 -->
+      <div class="lead-strip reveal">
+        <i class="fa-solid fa-quote-left"></i>
+        <div>
+          <p>欢迎来到我的个人学术主页。作为澳门科技大学教育博士生，我的研究聚焦<b>高等教育评估与质量保障体系</b>，师从孙建荣教授。本站既是我个人学习与研究的记录，也是一个围绕「评估—认证—改进」的系统化知识分享空间。</p>
+          <span class="en-line">Assessment for improvement · Quality through evidence.</span>
+        </div>
+      </div>
+
+      <!-- 三大入口 -->
+      <h2 class="section-title reveal">关于本主页 <span class="en-sub">What You'll Find Here</span></h2>
+      <div class="grid-3" style="margin-bottom:46px">
+        <article class="card reveal">
+          <div class="card-icon"><i class="fa-solid fa-user"></i></div>
+          <h3>个人简介</h3>
+          <p>教育背景、研究方向、导师介绍（孙建荣教授）与研究兴趣。</p>
+          <a class="more" href="about.html" data-i18n="common.learnMore">了解更多 →</a>
+        </article>
+        <article class="card reveal">
+          <div class="card-icon"><i class="fa-solid fa-flask"></i></div>
+          <h3>研究领域</h3>
+          <p>质量保障体系、学习成果评估、院校评估与认证、质量文化等五大方向与方法。</p>
+          <a class="more" href="research.html" data-i18n="common.learnMore">了解更多 →</a>
+        </article>
+        <article class="card reveal">
+          <div class="card-icon"><i class="fa-solid fa-newspaper"></i></div>
+          <h3>学术成果</h3>
+          <p>科研项目、会议报告与期刊论文的持续整理与更新。</p>
+          <a class="more" href="publications.html" data-i18n="common.learnMore">了解更多 →</a>
+        </article>
+      </div>
+
+      <!-- 近期动态 -->
+      <h2 class="section-title reveal">近期动态 <span class="en-sub">Recent Updates</span></h2>
+      <div class="grid-3" style="margin-bottom:46px">
+        <div class="card reveal">
+          <span class="pub-type pt-report">博士课程</span>
+          <h3 style="font-size:16px;margin-top:10px">完成「高等教育质量保障」专题研讨</h3>
+          <span style="color:var(--ink-soft);font-size:13px"><i class="fa-regular fa-calendar"></i> 2026-05</span>
+        </div>
+        <div class="card reveal">
+          <span class="pub-type pt-conf">会议报告</span>
+          <h3 style="font-size:16px;margin-top:10px">参加区域高校评估研讨会并作报告</h3>
+          <span style="color:var(--ink-soft);font-size:13px"><i class="fa-regular fa-calendar"></i> 2025-12</span>
+        </div>
+        <div class="card reveal">
+          <span class="pub-type pt-journal">专栏更新</span>
+          <h3 style="font-size:16px;margin-top:10px">新文上线：什么是高等教育质量保障体系？</h3>
+          <span style="color:var(--ink-soft);font-size:13px"><i class="fa-regular fa-calendar"></i> 2025-09</span>
+        </div>
+      </div>
+
+      <!-- 知识专栏入口 -->
+      <section class="research-intro reveal">
+        <div class="head-row">
+          <h2 class="section-title" style="margin:0">知识分享专栏 <span class="en-sub">Knowledge Hub on HE Assessment &amp; QA</span></h2>
+          <a class="btn btn-outline" href="knowledge.html"><span data-i18n="common.readKnowledge">进入知识专栏</span> <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <p style="margin-top:10px">以「理论 + 框架 + 实务提示」的方式，系统讲解高等教育评估与质量保障的核心概念。每篇文章为独立页面，可阅读、打印或转载交流。</p>
+      </section>
+
+    </div>
   </main>
 
-  <!-- ======= Footer ======= -->
+  <!-- ===== Footer ===== -->
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p id="footerNote">© 2026 · 澳门科技大学教育博士研究生 · 高等教育评估与质量保障</p>
+      <p>© <span id="year">2026</span> · 乐一 · 澳门科技大学教育博士研究生 · 高等教育评估与质量保障</p>
       <p class="footer-links">
-        <a href="mailto:junjiel10@student.must.edu.mo"><i class="fa-solid fa-envelope"></i> Email</a>
+        <a href="contact.html" data-i18n="nav.contact">联系方式</a>
         <span class="dot">·</span>
-        <span data-i18n="footer.built">基于知识共享精神维护，欢迎交流指正。</span>
+        <a href="mailto:junjiel10@student.must.edu.mo"><i class="fa-solid fa-envelope"></i> junjiel10@student.must.edu.mo</a>
       </p>
     </div>
   </footer>
 
-  <!-- 文章/弹窗渲染目标 -->
-  <div id="modalRoot"></div>
-
-  <script src="js/data.js"></script>
-  <script src="js/app.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
