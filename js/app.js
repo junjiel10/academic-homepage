@@ -372,6 +372,9 @@
   window.addEventListener("hashchange", renderCurrent);
   $("#langToggle").addEventListener("click", () => setLang(lang === "zh" ? "en" : "zh"));
 
+  // 顶栏导航按钮（静态元素，仅需绑定一次）：点击切换到对应路由
+  $$(".nav-link").forEach((b) => b.addEventListener("click", () => goto(b.dataset.nav)));
+
   /* ---------- 启动 ---------- */
   applyStaticI18n();
   renderCurrent();
